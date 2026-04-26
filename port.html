@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:linear-gradient(135deg,#0a0f1f,#0f2a4f);
+            color:white;
+        }
+
+        /* NAVBAR */
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 60px;
+        }
+
+        nav h2{
+            color:#4da6ff;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:25px;
+            font-size:14px;
+        }
+
+        nav a:hover{
+            color:#4da6ff;
+        }
+
+        /* HERO */
+        .hero{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:60px;
+            flex-wrap:wrap;
+        }
+
+        .left{
+            max-width:500px;
+        }
+
+        .left h1{
+            font-size:45px;
+        }
+
+        .left span{
+            color:#4da6ff;
+        }
+
+        .left p{
+            color:#bbb;
+            margin:20px 0;
+        }
+
+        /* BUTTONS */
+        .buttons{
+            margin:20px 0;
+        }
+
+        .btn1{
+            padding:10px 20px;
+            background:#4da6ff;
+            border:none;
+            border-radius:20px;
+            color:white;
+            margin-right:10px;
+            cursor:pointer;
+        }
+
+        .btn2{
+            padding:10px 20px;
+            background:transparent;
+            border:1px solid #4da6ff;
+            border-radius:20px;
+            color:#4da6ff;
+            cursor:pointer;
+        }
+	.icons a{
+    text-decoration: none;
+    color: #bbb;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.icons a:hover{
+    color: #4da6ff;
+}
+
+
+
+        /* IMAGE */
+        .right img{
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            object-fit:cover;
+            border:5px solid #4da6ff;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            .hero{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            nav{
+                padding:20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Portfolio</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+    <div class="left">
+        <h1>Hi, I'm <span>Suthanthira</span></h1>
+        <h3>Java Developer</h3>
+
+        <p>
+            I build clean and responsive websites. Passionate fresher ready to create real-world applications.
+        </p>
+
+        <div class="buttons">
+            <button class="btn1">Hire Me</button>
+            <button class="btn2">View Work</button>
+        </div>
+	<div class="icons">
+    <a href="https://github.com/Suthanthira-02" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/suthanthira-a-208673309/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/_s.u.b.i._.02/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+           </div>
+
+
+    <div class="right">
+        <!-- Replace with your image -->
+        <img src="portimg.jpg" alt="profile">
+    </div>
+
+</div>
+
+</body>
+</html>
